@@ -184,7 +184,7 @@ export default class MonitorScreen extends EventEmitter {
 
         // Set iframe attributes
         // PROD
-        iframe.src = 'https://ruchika-inner-portfolio.netlify.app/';
+        iframe.src = 'http://localhost:3000/';
         /**
          * Use dev server is query params are present
          *
@@ -510,8 +510,8 @@ export default class MonitorScreen extends EventEmitter {
 
             const distance = Math.sqrt(
                 (camPos.x - dimPos.x) ** 2 +
-                    (camPos.y - dimPos.y) ** 2 +
-                    (camPos.z - dimPos.z) ** 2
+                (camPos.y - dimPos.y) ** 2 +
+                (camPos.z - dimPos.z) ** 2
             );
 
             const opacity = 1 / (distance / 10000);
